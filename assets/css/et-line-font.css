@@ -9,14 +9,6 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Inconsolata';
-	src:url("http://fonts.googleapis.com/css?family=Inconsolata:400,700");
-	font-weight: normal;
-	font-style: normal;
-}
-
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
 	font-family: 'et-line';
