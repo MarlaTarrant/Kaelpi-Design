@@ -4,6 +4,8 @@
 
         var_dump($_POST);
         
+        $mail->Host = 'smtp.gmail.com';
+
         $name = $_POST['name'];
         $email = $_POST['email'];
         $message = $_POST['message'];
