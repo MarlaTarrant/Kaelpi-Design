@@ -3,18 +3,18 @@
     $result="";
 
     if (isset($_POST['submit'])) {
-        require 'phpmailer/PHPMailerAutoload.php';
+        require '/assets/phpmailer/PHPMailerAutoload.php';
         $mail = new PHPMailer;
 
         $mail->Host='smtp.gmail.com';
         $mail->Port='587';
         $mail->SMTPAuth=true;
         $mail->SMTPSecure='tls';
-        $mail->Username='tarrantmarlajean@gmail.com';
-        $mail->Password='K@3lp1410961107';
+        $mail->Username='kaelpidesign@gmail.com';
+        $mail->Password='password';
 
         $mail->setFrom($_POST['email'],$_POST['name']);
-        $mail->addAddress('no-reply@kaelpidesign.com');
+        $mail->addAddress('kaelpidesign@gmail.com');
         $mail->addReplyTo($_POST['email'],$_POST['name']);
 
         $mail->isHTML(true);
