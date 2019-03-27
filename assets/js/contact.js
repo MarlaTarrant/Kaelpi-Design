@@ -18,6 +18,7 @@
 				var email           = $("input#email").val();
 				var message         = $("textarea#message").val();
 				var submit          = $('#contact-form submit');
+				var ajaxResponse    = $('#contact-response');
 
 				$.ajax({
 					url: 'assets/contact.php',
@@ -48,7 +49,7 @@
 						$('#success').html("<div class='alert alert-danger'>");
 						$('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
 							.append("</button>");
-						$('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that our mail server is not responding. Please email support@margineco.com if the problem persists.");
+						$('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that our mail server is not responding. Please email kaelpidesign@gmail.com if the problem persists.");
 						$('#success > .alert-danger').append('</div>');
 						//clear all fields
 						$('#contact-form').trigger("reset");
