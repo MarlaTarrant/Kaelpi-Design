@@ -10,7 +10,7 @@
         $mail->Port='587';
         $mail->SMTPAuth=true;
         $mail->SMTPSecure='tls';
-        $mail->Username='kaelpidesign@gmail.com';
+        $mail->Username='tarrantmarlajean@gmail.com';
         $mail->Password='K@3lp1410961107';
 
         $mail->setFrom($_POST['email'],$_POST['name']);
