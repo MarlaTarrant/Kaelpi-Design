@@ -6,15 +6,16 @@
         require '/assets/phpmailer/PHPMailerAutoload.php';
         $mail = new PHPMailer;
 
-        $mail->Host='smtp.gmail.com';
+        $mail->isSMTP();
+        $mail->Host='smtp.margineco.com';
         $mail->Port='587';
-        $mail->SMTPAuth=true;
+        $mail->SMTPAuth=on;
         $mail->SMTPSecure='tls';
         $mail->Username='kaelpidesign@gmail.com';
-        $mail->Password='password';
+        $mail->Password='K@3lp1410961107';
 
         $mail->setFrom($_POST['email'],$_POST['name']);
-        $mail->addAddress('kaelpidesign@gmail.com');
+        $mail->addAddress('mail.margineco.com');
         $mail->addReplyTo($_POST['email'],$_POST['name']);
 
         $mail->isHTML(true);
