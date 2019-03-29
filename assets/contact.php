@@ -4,9 +4,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
-require 'vendor/autoload.php';
+require 'phpmailer/PHPMailerAutoload.php';
 
-$mail = new PHPMailer(true);
+$mail = new PHPMailer;
 
 try {
     if(isset($_POST['submit'])){
@@ -31,7 +31,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = "Subject";
+    $mail->Subject = "PHPMailer GMail SMTP test";
     $mail->Body    = $message . "<br> Sent From: Form";
 
     $mail->send();
