@@ -5,23 +5,23 @@ use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
 require 'vendor/autoload.php';
+require 'assets/phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer(true);
 
 try {
-    if(isset($_POST['send'])){
+    if(isset($_POST['submit'])){
 
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
-    $subject = $_POST['subject']
         
     //Server settings
     $mail->SMTPDebug = 2;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
     $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'tarrantmarlajean@gmail.com';               // SMTP username
+    $mail->Username   = 'kaelpidesign@gmail.com';               // SMTP username
     $mail->Password   = 'K@elp1410961107';                      // SMTP password
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, `ssl` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
@@ -32,11 +32,11 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = $subject;
+    $mail->Subject = "Subject";
     $mail->Body    = $message . "<br> Sent From: Form";
 
     $mail->send();
-    echo 'Message has been sent';
+    echo 'Thank you, your message has been sent. We will get back to you shortly.';
     }
 
 } catch (Exception $e) {
