@@ -711,6 +711,13 @@ Home Section
 Sections
 ------------------------------------------------------------------- */
 
+hr{ 
+	height: 1px;
+	color: lightgrey;
+	background-color: lightgrey;
+	border: none;
+  }
+
 .wrapper {
 	position: relative;
 	background: #fff;
