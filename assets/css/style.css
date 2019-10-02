@@ -1208,7 +1208,10 @@ Pagination
 }
 
 .instaimg img {
+	position: relative;
 	margin-bottom: 30px;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 /* -------------------------------------------------------------------
