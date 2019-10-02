@@ -197,13 +197,13 @@ Button styles
 .btn.btn-g {
 	background: transparent;
 	border: 1px solid #b2b2b2;
-	color: #666;
+	color: #666  !important;
 }
 
 .btn.btn-g:hover,
 .btn.btn-g:focus {
-	background: #b2b2b2;
-	color: #fff;
+	background: #b2b2b2  !important;
+	color: #fff  !important;
 }
 
 .btn.btn-border-d {
@@ -700,6 +700,13 @@ Home Section
 Sections
 ------------------------------------------------------------------- */
 
+.border {
+	border-style: solid;
+	color: white;
+	border-width: 0px 0px 1px 0px;
+	margin-bottom: 30px;  
+}
+
 hr{ 
 	color: #eee;
 	background-color: #eee;
@@ -743,6 +750,14 @@ hr{
 .module-title {
 	position: relative;
 	margin: 0 0 70px;
+	letter-spacing: 0.15em;
+	font-size: 30px;
+	color: #000;
+}
+
+.module-title-cta {
+	position: relative;
+	margin: 0 0 30px;
 	letter-spacing: 0.15em;
 	font-size: 30px;
 	color: #000;
@@ -1077,79 +1092,6 @@ opacity: 1;
 }
 
 /* ------------------------------------------------------------------
-Team
-------------------------------------------------------------------- */
-
-.team-item {
-	position: relative;
-	text-align: center;
-}
-
-.team-image {
-	position: relative;
-	overflow: hidden;
-}
-
-.team-image img {
-	width: 100%;
-}
-
-.team-image:after {
-	position: absolute;
-	background: transparent;
-	content: " ";
-	display: block;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 1;
-}
-
-.team-detail {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	bottom: 50%;
-	opacity: 0;
-	z-index: 2;
-	padding: 20px;
-	-webkit-transform: translateY(50%);
-	   -moz-transform: translateY(50%);
-	        transform: translateY(50%);
-}
-
-.team-detail h5 {
-	text-transform: uppercase;
-	font-size: 14px;
-}
-
-.team-descr {
-	margin: 20px 0 0;
-}
-
-.team-name {
-	text-transform: uppercase;
-	font-size: 14px;
-	color: #000;
-}
-
-.team-role {
-	text-transform: uppercase;
-	font-size: 12px;
-}
-
-/* Team member hover */
-
-.team-item:hover .team-image:after {
-	background: rgba(255, 255, 255, .9);
-}
-
-.team-item:hover .team-detail {
-	opacity: 1;
-}
-
-/* ------------------------------------------------------------------
 Post
 ------------------------------------------------------------------- */
 
@@ -1239,6 +1181,34 @@ Pagination
 
 .pagination a + a {
 	padding-left: 20px;
+}
+
+/* instagram feed */
+
+.insta-tag {
+	color: white;
+}
+
+.insta-tag:hover {
+	color: black;
+}
+
+.insta-bg {
+	background-color: #85a88c;
+}
+
+.insta-height {
+	height: 100%;
+	width: 100%;
+}
+
+.insta-module {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.instaimg img {
+	margin-bottom: 30px;
 }
 
 /* -------------------------------------------------------------------
