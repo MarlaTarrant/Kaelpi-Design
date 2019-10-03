@@ -588,7 +588,7 @@ Navbar
 .navbar-custom .dropdown-menu > li > a:focus,
 .navbar-custom .dropdown-menu > li > a:hover {
 	background: none;
-	color: #999;
+	color: #000;
 }
 
 .navbar-custom .dropdown-menu > li > a:hover {
