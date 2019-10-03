@@ -1,14 +1,5 @@
 $(document).ready(function () {
 
-    var limitWidth;
-    var width = $(window).width();
-
-    if (width <= 768) {
-        limitWidth = 2;
-    } else {
-        limitWidth = 12;
-    }
-
     var userFeed = new Instafeed({
         get: 'user',
         userId: '12557095608',
